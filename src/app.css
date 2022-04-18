@@ -171,6 +171,7 @@ a {
 	align-items: center;
 	justify-content: space-between;
 	padding: 25px 0px;
+	margin-bottom: 25px;
 	border-bottom: 1px solid var(--color2);
 }
 
@@ -283,7 +284,11 @@ a {
 }
 
 /* Sections Settings--- */
-
+.section--title {
+	width: 100%;
+	padding: 0px 15px;
+	padding-top: 25px;
+}
 .section--100 {
 	width: 100%;
 	padding: 25px 15px;
@@ -485,6 +490,7 @@ a {
 	align-items: center;
 	justify-content: space-between;
 	padding: 25px 15px;
+	margin-top: 25px;
 	border-top: 1px solid var(--color2);
 }
 

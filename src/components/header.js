@@ -1,4 +1,4 @@
-function Header() {
+function Header(props) {
 	return (
 		<div className="head">
 			<div className="logo">
