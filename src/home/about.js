@@ -1,4 +1,4 @@
-function SectionAbout(props) {
+function About(props) {
 	return (
 		<div className="section--100">
 			<p className="p-p1">{props.text}</p>
@@ -15,4 +15,4 @@ function SectionAbout(props) {
 		</div>
 	);
 }
-export default SectionAbout;
+export default About;

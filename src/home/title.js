@@ -1,4 +1,4 @@
-function SectionTitle(props) {
+function Title(props) {
 	return (
 		<div className="section--title">
 			<h1 className="h-h1">{props.title}</h1>
@@ -6,4 +6,4 @@ function SectionTitle(props) {
 		</div>
 	);
 }
-export default SectionTitle;
+export default Title;

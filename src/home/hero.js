@@ -1,4 +1,4 @@
-function SectionHero(props) {
+function Hero(props) {
 	return (
 		<div className="section--100">
 			<p className="p-p1">{props.text}</p>
@@ -14,4 +14,4 @@ function SectionHero(props) {
 		</div>
 	);
 }
-export default SectionHero;
+export default Hero;

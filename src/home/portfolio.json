@@ -6,7 +6,7 @@
       "img": "assets/portfolio-demo-blue.jpg",
       "text": "Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex.",
       "github": "#",
-      "url": "#"
+      "test": "#"
    },
    {
       "id": 1,
@@ -15,7 +15,7 @@
       "img": "assets/portfolio-demo-green.jpg",
       "text": "Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex.",
       "github": "#",
-      "url": "#"
+      "test": "#"
    },
    {
       "id": 2,
@@ -24,6 +24,6 @@
       "img": "assets/portfolio-demo-red.jpg",
       "text": "Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex.",
       "github": "#",
-      "url": "#"
+      "test": "#"
    }
 ]
