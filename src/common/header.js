@@ -1,33 +1,26 @@
-function Header() {
+// Import ---
+import nav from './nav.json';
+
+// Construct ---
+function Header(props) {
 	return (
 		<div className="head">
 			<div className="logo">
 				<a className="h-h3" href="#">
-					cStudio
+					{props.brandname}
 				</a>
 			</div>
 			<div className="menu SR">
 				<ul>
-					<li>
-						<a className="h-h3" href="#">
-							about
-						</a>
-					</li>
-					<li>
-						<a className="h-h3" href="#">
-							portfolio
-						</a>
-					</li>
-					<li>
-						<a className="h-h3" href="#">
-							contact
-						</a>
-					</li>
-					<li>
-						<a className="h-h3" href="#">
-							hire
-						</a>
-					</li>
+					{nav.map((navitem) => {
+						return (
+							<li key={navitem.id}>
+								<a className="h-h3" href={navitem.url}>
+									{navitem.title}
+								</a>
+							</li>
+						);
+					})}
 				</ul>
 			</div>
 			<input id="menuToggle" type="checkbox" />
@@ -37,4 +30,6 @@ function Header() {
 		</div>
 	);
 }
+
+// Export ---
 export default Header;

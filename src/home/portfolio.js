@@ -1,3 +1,4 @@
+// Construct ---
 function Portfolio(props) {
 	return (
 		<div className="section--100">
@@ -5,4 +6,6 @@ function Portfolio(props) {
 		</div>
 	);
 }
+
+// Export ---
 export default Portfolio;

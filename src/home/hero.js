@@ -1,3 +1,4 @@
+// Construct ---
 function Hero(props) {
 	return (
 		<div className="section--100">
@@ -14,4 +15,6 @@ function Hero(props) {
 		</div>
 	);
 }
+
+// Export ---
 export default Hero;

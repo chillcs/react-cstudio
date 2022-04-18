@@ -1,3 +1,4 @@
+// Construct ---
 function About(props) {
 	return (
 		<div className="section--100">
@@ -15,4 +16,6 @@ function About(props) {
 		</div>
 	);
 }
+
+// Export ---
 export default About;

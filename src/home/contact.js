@@ -1,3 +1,4 @@
+// Construct---
 function Contact(props) {
 	return (
 		<div className="section--100">
@@ -5,4 +6,6 @@ function Contact(props) {
 		</div>
 	);
 }
+
+// Export ---
 export default Contact;

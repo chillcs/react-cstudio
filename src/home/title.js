@@ -1,3 +1,4 @@
+// Construct ---
 function Title(props) {
 	return (
 		<div className="section--title">
@@ -6,4 +7,6 @@ function Title(props) {
 		</div>
 	);
 }
+
+// Export ---
 export default Title;

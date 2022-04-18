@@ -1,3 +1,4 @@
+// Import ---
 import Header from './common/header';
 import Title from './home/title';
 import Hero from './home/hero';
@@ -6,10 +7,11 @@ import Portfolio from './home/portfolio';
 import Contact from './home/contact';
 import Footer from './common/footer';
 
+// Construct ---
 function App() {
 	return (
 		<div className="App">
-			<Header />
+			<Header brandname="cStudio" />
 			<Title title="cStudio" subtitle="code x commerce" />
 			<Hero text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dicta veritatis sunt nulla consectetur autem ipsum sit pariatur. Dolorum porro consequuntur omnis quis fuga suscipit sint dolorem aspernatur, voluptatum expedita." />
 			<Title title="about" subtitle="our vision" />
@@ -23,4 +25,5 @@ function App() {
 	);
 }
 
+// Export ---
 export default App;

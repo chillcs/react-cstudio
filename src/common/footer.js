@@ -1,3 +1,4 @@
+// Construct ---
 function Footer() {
 	return (
 		<div className="foot">
@@ -36,4 +37,6 @@ function Footer() {
 		</div>
 	);
 }
+
+// Export ---
 export default Footer;
