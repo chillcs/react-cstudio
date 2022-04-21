@@ -250,7 +250,8 @@ a {
 	z-index: 10;
 }
 
-.menu ul {
+.menu ul,
+.menu-mob ul {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
@@ -258,7 +259,8 @@ a {
 	align-items: center;
 }
 
-.menu li {
+.menu li,
+.menu-mob li {
 	padding: 15px 25px;
 }
 

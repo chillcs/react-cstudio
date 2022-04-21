@@ -1,8 +1,16 @@
 // Import ---
-import nav from './nav.json';
+import Nav from './nav';
+import React from 'react';
 
 // Construct ---
 function Header(props) {
+	// Menu Toggle ---
+	const [menu, setMenu] = React.useState(true);
+	function toggleMenu() {
+		setMenu((prevState) => !prevState);
+		document.body.classList.toggle('overflow');
+	}
+
 	return (
 		<div className="head">
 			<div className="logo">
@@ -10,23 +18,19 @@ function Header(props) {
 					{props.brandname}
 				</a>
 			</div>
-			<div className="menu SR">
-				<ul>
-					{nav.map((navitem) => {
-						return (
-							<li key={navitem.id}>
-								<a className="h-h3" href={navitem.url}>
-									{navitem.title}
-								</a>
-							</li>
-						);
-					})}
-				</ul>
-			</div>
-			<input id="menuToggle" type="checkbox" />
+			<input id="menuToggle" type="checkbox" onClick={toggleMenu} />
 			<label className="menu-btn-cont" for="menuToggle">
 				<div className="menu-btn"></div>
 			</label>
+			{menu ? (
+				<div className="menu SR">
+					<Nav />
+				</div>
+			) : (
+				<div className="menu-mob SR">
+					<Nav />
+				</div>
+			)}
 		</div>
 	);
 }
