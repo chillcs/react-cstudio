@@ -1,6 +1,6 @@
 // Import ---
-import Nav from './nav';
 import React from 'react';
+import Nav from './nav';
 
 // Construct ---
 function Header(props) {
