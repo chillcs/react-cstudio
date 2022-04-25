@@ -14,11 +14,15 @@ function Portfolio(props) {
 		setActive(active === data.length - 1 ? 0 : active + 1);
 	};
 
-	console.log(active);
+	const selectSlide = (slide) => {
+		const id = parseInt(slide.target.id);
+		setActive(active === id ? active : id);
+	};
+
 	return (
 		<div className="section--100">
 			<p className="p-p1">{props.text}</p>
-			<div class="slideshow">
+			<div className="slideshow">
 				<div className="slide-controls">
 					<button id="btnSL" className="btn" onClick={slideLeft}>
 						‹
@@ -38,7 +42,11 @@ function Portfolio(props) {
 								<h4 className="h-h4 SR">{slide.title}</h4>
 							</div>
 							<div className="slide-content Fade">
-								<div id={slide.imgId} className="slide-img SL"></div>
+								<img
+									className="slide-img SL"
+									src={require(`../assets/${slide.image.filename}`)}
+									alt={slide.image.alt}
+								/>
 								<p className="p-p1 SR">{slide.description}</p>
 								<div className="ext-btns SL">
 									<button className="btn">
@@ -57,12 +65,19 @@ function Portfolio(props) {
 									</button>
 								</div>
 							</div>
-							<div className="slide-bars">
-								<div className="bar bar--active"></div>
-								<div className="bar"></div>
-								<div className="bar"></div>
-							</div>
 						</div>
+					);
+				})}
+			</div>
+			<div className="slide-bars">
+				{data.map((slide) => {
+					return (
+						<div
+							className={slide.id === active ? 'bar bar--active' : 'bar'}
+							key={slide.id}
+							id={slide.id}
+							onClick={selectSlide}
+						></div>
 					);
 				})}
 			</div>

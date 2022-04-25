@@ -3,8 +3,11 @@
       "id": 0,
       "date": "02.16.2022",
       "title": "Lorem ipsum dolor 00",
-      "img": "assets/portfolio-demo-blue.jpg",
-      "imgId": "sImg01",
+      "image":
+         {
+            "filename":"portfolio-demo-blue.jpg",
+            "alt":"portfolio demo blue"
+         },
       "description": "Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex.",
       "links":
          {
@@ -16,8 +19,11 @@
       "id": 1,
       "date": "02.16.2022",
       "title": "Lorem ipsum dolor 01",
-      "img": "assets/portfolio-demo-green.jpg",
-      "imgId": "sImg02",
+      "image":
+         {
+            "filename":"portfolio-demo-green.jpg",
+            "alt":"portfolio demo green"
+         },
       "description": "Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex.",
       "links":
          {
@@ -29,8 +35,11 @@
       "id": 2,
       "date": "02.16.2022",
       "title": "Lorem ipsum dolor 02",
-      "img": "assets/portfolio-demo-red.jpg",
-      "imgId": "sImg03",
+      "image":
+         {
+            "filename":"portfolio-demo-red.jpg",
+            "alt":"portfolio demo red"
+         },
       "description": "Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex.",
       "links":
          {

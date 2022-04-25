@@ -433,22 +433,10 @@ a {
 .slide-img {
 	width: 100%;
 	height: 200px;
+	object-fit: cover;
+	object-position: center;
 	margin-bottom: 15px;
-}
 
-#sImg01 {
-	background: url('assets/portfolio-demo-blue.jpg') no-repeat center;
-	background-size: cover;
-}
-
-#sImg02 {
-	background: url('assets/portfolio-demo-green.jpg') no-repeat center;
-	background-size: cover;
-}
-
-#sImg03 {
-	background: url('assets/portfolio-demo-red.jpg') no-repeat center;
-	background-size: cover;
 }
 
 .slide-text {
@@ -471,6 +459,7 @@ a {
 .slide-bars {
 	display: flex;
 	justify-content: space-between;
+	gap: 10px;
 	width: 100%;
 }
 
