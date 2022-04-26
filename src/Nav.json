@@ -2,21 +2,21 @@
    {
       "id": 0,
       "title": "about",
-      "url": "#"
+      "path": "/about"
    },
    {
       "id": 1,
       "title": "portfolio",
-      "url": "#"
+      "path": "/portfolio"
    },
    {
       "id": 2,
       "title": "contact",
-      "url": "#"
+      "path": "/contact"
    },
    {
       "id": 3,
       "title": "hire",
-      "url": "#"
+      "path": "#"
    }
 ]

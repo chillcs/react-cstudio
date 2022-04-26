@@ -1,10 +1,12 @@
 // Import ---
 import React from 'react';
-import Nav from './nav';
+import { useNavigate } from 'react-router-dom';
+import Nav from './Nav';
 
 // Construct ---
 function Header(props) {
 	// Menu Toggle ---
+	let navigate = useNavigate();
 	const [menu, setMenu] = React.useState(true);
 	function toggleMenu() {
 		setMenu((prevState) => !prevState);
@@ -14,7 +16,12 @@ function Header(props) {
 	return (
 		<div className="head">
 			<div className="logo">
-				<a className="h-h3" href="#">
+				<a
+					className="h-h3"
+					onClick={() => {
+						navigate('/');
+					}}
+				>
 					{props.brandname}
 				</a>
 			</div>

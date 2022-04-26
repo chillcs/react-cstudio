@@ -44,7 +44,7 @@ function Portfolio(props) {
 							<div className="slide-content Fade">
 								<img
 									className="slide-img SL"
-									src={require(`../assets/${slide.image.filename}`)}
+									src={require(`../../assets/${slide.image.filename}`)}
 									alt={slide.image.alt}
 								/>
 								<p className="p-p1 SR">{slide.description}</p>
